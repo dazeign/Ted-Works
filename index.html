@@ -1,45 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <script src="https://kit.fontawesome.com/b4d27aaf57.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documenter User-Interface</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-    @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap");
-    *{
-        font-family: "Baloo Chettan 2", cursive;
-    }
-      .hidden {
-        display: none;
-      }
-      .currentLocation,
-      .originalLocation,
-      .owner,
-      .structureIdentification,
-      .primaryInformation {
-        cursor: pointer;
-      }
 
-      h1,h2,h3,h4 {
-        background-color: #f0f0f0;
-        border: 1px solid #f0f0f0;
-        padding: 5px;
-        border-radius: 5px;
-        color: #3e3636;
-        display: block;
-        align-items: center;
-        font-size: 1rem;
-        font-weight: 600;
-      }
     </style>
-  </head>
-  <body>
-    <h1 style="margin-left: 15%" class= "primaryInformation">Primary Information<i class="fas fa-caret-down"></i></h1>
-    <div class = 'primaryInformationDiv' style="margin-left: 15%">
-      <p>
-        Foundation Type:
-        <select>
+</head>
+
+<body>
+    <h3 class="primaryInformation">Primary Information<i class="fas fa-caret-down"></i></h1>
+        <div class='primaryInformationDiv'>
+            <p>
+                Foundation Type:
+                <select>
           <option></option>
           <option>Option 1</option>
           <option>Option 2</option>
@@ -47,24 +25,10 @@
           <option>Option 4</option>
           <option>Option 5</option>
         </select>
-      </p>
-      <p>
-        Construction Style:
-        <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-        </select>
-      </p>
-      <p>
-        Joinery Style:
-        <select>
+            </p>
+            <p>
+                Construction Style:
+                <select>
           <option></option>
           <option>Option 1</option>
           <option>Option 2</option>
@@ -75,10 +39,24 @@
           <option>Option 7</option>
           <option>Option 8</option>
         </select>
-      </p>
-      <p>
-        Primary Wood Species:
-        <select>
+            </p>
+            <p>
+                Joinery Style:
+                <select>
+          <option></option>
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          <option>Option 4</option>
+          <option>Option 5</option>
+          <option>Option 6</option>
+          <option>Option 7</option>
+          <option>Option 8</option>
+        </select>
+            </p>
+            <p>
+                Primary Wood Species:
+                <select>
           <option></option>
           <option>Option 1</option>
           <option>Option 2</option>
@@ -91,10 +69,10 @@
           <option>Option 9</option>
           <option>Option 10</option>
         </select>
-      </p>
-      <p>
-        Condition:
-        <select>
+            </p>
+            <p>
+                Condition:
+                <select>
           <option></option>
           <option>Option 1</option>
           <option>Option 2</option>
@@ -103,111 +81,111 @@
           <option>Option 5</option>
           <option>Option 6</option>
         </select>
-      </p>
-    
-      <p>
-        Location (Private):
-        <select>
+            </p>
+
+            <p>
+                Location (Private):
+                <select>
           <option></option>
           <option>Yes</option>
           <option>No</option>
         </select>
-      </p>
-    </div>
-
-    <div style="margin-left: 15%">
-      <h2 class="structureIdentification">Structure Identification<i class="fas fa-caret-down"></i></h2>
-      <div class="structureIdentificationDiv">
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            Cover Image:
-            <input type="file" name="fileToUpload" id="fileToUpload" />
-          </form>
-          <form>
-            <p>
-              ID:
-              <input type="number" />
             </p>
-            <p>
-              Name:
-              <input type="text" />
-            </p>
-      </div>
-        <h3 class="currentLocation">Current Location<i class="fas fa-caret-down"></i></h3>
-        <div class="currentLocationDiv">
-          <p>Coordinates: <input type="text" /></p>
-
-          <p>Street Address: <input type="text" /></p>
-
-          <p>City: <input type="text" /></p>
-
-          <p>State: <input type="text" /></p>
-
-          <p>Country: <input type="text" /></p>
-
-          <p>State: <input type="text" /></p>
-
-          <p>Coordinates: <input type="text" /></p>
-        </div>
-        <h3 class="originalLocation">
-          Original Location (if from another country <i class="fas fa-caret-down"></i>
-        </h3>
-        <div class="originalLocationDiv">
-          <p>Coordinates: <input type="text" /></p>
-
-          <p>Street Address: <input type="text" /></p>
-
-          <p>City: <input type="text" /></p>
-
-          <p>State: <input type="text" /></p>
-
-          <p>Country: <input type="text" /></p>
-
-          <p>State: <input type="text" /></p>
-
-          <p>Coordinates: <input type="text" /></p>
         </div>
 
-        <h3 class="owner">Owner <i class="fas fa-caret-down"></i></h3>
-        <div class="ownerDiv">
-          <label>Last Name: <input type="text"/></label>
+        <div>
+            <h3 class="structureIdentification">Structure Identification<i class="fas fa-caret-down"></i></h3>
+            <div class="structureIdentificationDiv">
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Cover Image:
+                    <input type="file" name="fileToUpload" id="fileToUpload" />
+                </form>
+                <form>
+                    <p>
+                        ID:
+                        <input type="number" />
+                    </p>
+                    <p>
+                        Name:
+                        <input type="text" />
+                    </p>
+            </div>
+            <h4 class="currentLocation">Current Location <i class="fas fa-caret-down"></i></h3>
+    <div class="currentLocationDiv">
+        <p>Coordinates: <input type="text" /></p>
 
-          <label>First Name: <input type="text"/></label>
+        <p>Street Address: <input type="text" /></p>
 
-          <h4>Residence:</h4>
-          <label>Street Address: <input type="text"/></label>
+        <p>City: <input type="text" /></p>
 
-          <label>City: <input type="text"/></label>
+        <p>State: <input type="text" /></p>
 
-          <label>State: <input type="text"/></label>
+        <p>Country: <input type="text" /></p>
 
-          <label>Zip Code: <input type="text"/></label>
+        <p>State: <input type="text" /></p>
 
-          <h4>Contact:</h4>
-          <label>Phone Number: <input type="text"/></label>
+        <p>Coordinates: <input type="text" /></p>
+    </div>
+    <h5 class="originalLocation">
+        If from another country (Original Location) <i class="fas fa-caret-down"></i>
+    </h5>
+    <div class="originalLocationDiv">
+        <p>Coordinates: <input type="text" /></p>
 
-          <label>Texting: <input type="text"/></label>
+        <p>Street Address: <input type="text" /></p>
 
-          <label>Email: <input type="email"/></label>
+        <p>City: <input type="text" /></p>
 
-          <p>Owner History: <input type="text" /></p>
+        <p>State: <input type="text" /></p>
 
-          <p>Significant History: <input type="text" /></p>
-        </div>
-      </form>
+        <p>Country: <input type="text" /></p>
+
+        <p>State: <input type="text" /></p>
+
+        <p>Coordinates: <input type="text" /></p>
     </div>
 
-    <div style="margin-left: 15%">
-      <h2>Structure Identification<i class="fas fa-caret-down"></i></h2>
-    </div>
+    <h3 class="owner">Owner <i class="fas fa-caret-down"></i></h3>
+    <div class="ownerDiv">
+        <label>Last Name: <input type="text"/></label>
 
-    <div style="margin-left: 15%">
-      <form>
+        <label>First Name: <input type="text"/></label>
+
+        <h4>Residence:</h4>
+        <label>Street Address: <input type="text"/></label>
+
+        <label>City: <input type="text"/></label>
+
+        <label>State: <input type="text"/></label>
+
+        <label>Zip Code: <input type="text"/></label>
+
+        <h4>Contact:</h4>
+        <label>Phone Number: <input type="text"/></label>
+
+        <label>Texting: <input type="text"/></label>
+
+        <label>Email: <input type="email"/></label>
+
+        <p>Owner History: <input type="text" /></p>
+
+        <p>Significant History: <input type="text" /></p>
+
         <input type="submit" value="SUBMIT" />
         <input type="reset" value="RESET" />
-      </form>
     </div>
-  </body>
-  <script>
+    </form>
+    </div>
+
+    <div>
+        <h2>Structure Identification<i class="fas fa-caret-down"></i></h2>
+    </div>
+
+    <div>
+
+    </div>
+</body>
+<script>
     // const currentLocationToggle = document.querySelector(".currentLocation");
     // const currentLocationDiv = document.querySelector(".currentLocationDiv");
     // currentLocationToggle.addEventListener("click", () => {
@@ -215,12 +193,12 @@
     // });
 
     function toggleFunction(clickElementClass, toggleElementClass) {
-      const clickElement = document.querySelector(`.${clickElementClass}`);
-      const toggleElement = document.querySelector(`.${toggleElementClass}`);
+        const clickElement = document.querySelector(`.${clickElementClass}`);
+        const toggleElement = document.querySelector(`.${toggleElementClass}`);
 
-      clickElement.addEventListener("click", () => {
-        toggleElement.classList.toggle("hidden");
-      });
+        clickElement.addEventListener("click", () => {
+            toggleElement.classList.toggle("hidden");
+        });
     }
 
 
@@ -229,5 +207,6 @@
     toggleFunction("owner", "ownerDiv");
     toggleFunction("structureIdentification", "structureIdentificationDiv");
     toggleFunction("primaryInformation", "primaryInformationDiv");
-  </script>
+</script>
+
 </html>
