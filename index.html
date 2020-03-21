@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <h3 class="primaryInformation">Primary Information<i class="fas fa-caret-down"></i></h1>
-        <div class='primaryInformationDiv'>
+    <p class="structureHead">Structure <i class="fas fa-caret-down"></i></h1>
+        <div class='structureHeadDiv'>
             <p>
                 Foundation Type:
                 <select>
@@ -83,18 +83,18 @@
         </select>
             </p>
 
-            <p>
+            <!-- <p>
                 Location (Private):
                 <select>
           <option></option>
           <option>Yes</option>
           <option>No</option>
         </select>
-            </p>
+            </p> -->
         </div>
 
         <div>
-            <h3 class="structureIdentification">Structure Identification<i class="fas fa-caret-down"></i></h3>
+            <p class="structureIdentification">Structure Identification <i class="fas fa-caret-down"></i></p>
             <div class="structureIdentificationDiv">
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     Cover Image:
@@ -106,52 +106,41 @@
                         <input type="number" />
                     </p>
                     <p>
-                        Name:
+                        Structure Name:
                         <input type="text" />
                     </p>
-            </div>
-            <h4 class="currentLocation">Current Location <i class="fas fa-caret-down"></i></h3>
+           </div>
+           
+           <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
     <div class="currentLocationDiv">
         <p>Coordinates: <input type="text" /></p>
-
         <p>Street Address: <input type="text" /></p>
-
         <p>City: <input type="text" /></p>
-
         <p>State: <input type="text" /></p>
-
         <p>Country: <input type="text" /></p>
-
         <p>State: <input type="text" /></p>
-
-        <p>Coordinates: <input type="text" /></p>
+        <p>Zip Code: <input type="text" /></p>
     </div>
-    <h5 class="originalLocation">
+    
+    <p class="originalLocation">
         If from another country (Original Location) <i class="fas fa-caret-down"></i>
-    </h5>
+    </p>
     <div class="originalLocationDiv">
         <p>Coordinates: <input type="text" /></p>
-
         <p>Street Address: <input type="text" /></p>
-
         <p>City: <input type="text" /></p>
-
         <p>State: <input type="text" /></p>
-
         <p>Country: <input type="text" /></p>
-
-        <p>State: <input type="text" /></p>
-
-        <p>Coordinates: <input type="text" /></p>
+        <p>Zip Code: <input type="text" /></p>
     </div>
 
-    <h3 class="owner">Owner <i class="fas fa-caret-down"></i></h3>
+    <p class="owner">Owner <i class="fas fa-caret-down"></i></p>
     <div class="ownerDiv">
         <label>Last Name: <input type="text"/></label>
 
         <label>First Name: <input type="text"/></label>
 
-        <h4>Residence:</h4>
+        <p class="residence">Residence:</p>
         <label>Street Address: <input type="text"/></label>
 
         <label>City: <input type="text"/></label>
@@ -160,25 +149,26 @@
 
         <label>Zip Code: <input type="text"/></label>
 
-        <h4>Contact:</h4>
+        <p class="contact">Contact:</p>
         <label>Phone Number: <input type="text"/></label>
 
         <label>Texting: <input type="text"/></label>
 
         <label>Email: <input type="email"/></label>
 
-        <p>Owner History: <input type="text" /></p>
+        <p class="ownerHistory">Owner History: <input type="text" /></p>
 
-        <p>Significant History: <input type="text" /></p>
+        <p class="ownerHistory">Significant History: <input type="text" /></p>
 
         <input type="submit" value="SUBMIT" />
         <input type="reset" value="RESET" />
     </div>
-    </form>
+</form>
     </div>
+    
 
     <div>
-        <h2>Structure Identification<i class="fas fa-caret-down"></i></h2>
+        <p>Structure Identification<i class="fas fa-caret-down"></i></p>
     </div>
 
     <div>
@@ -189,7 +179,7 @@
     // const currentLocationToggle = document.querySelector(".currentLocation");
     // const currentLocationDiv = document.querySelector(".currentLocationDiv");
     // currentLocationToggle.addEventListener("click", () => {
-    //   currentLocationDiv.classList.toggle("hidden");
+    //     currentLocationDiv.classList.toggle("hidden");
     // });
 
     function toggleFunction(clickElementClass, toggleElementClass) {
@@ -205,8 +195,8 @@
     toggleFunction("currentLocation", "currentLocationDiv");
     toggleFunction("originalLocation", "originalLocationDiv");
     toggleFunction("owner", "ownerDiv");
+    toggleFunction("structureHead", "structureHeadDiv");
     toggleFunction("structureIdentification", "structureIdentificationDiv");
-    toggleFunction("primaryInformation", "primaryInformationDiv");
 </script>
 
 </html>

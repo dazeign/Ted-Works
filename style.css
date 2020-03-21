@@ -2,39 +2,59 @@
 * {
     font-family: "Baloo Chettan 2", cursive;
 }
-
 body {
     margin: 0 15% 0 15%;
+    font-size: 14px;
 }
-
 .hidden {
     display: none;
 }
 
 .currentLocation,
 .originalLocation,
-.owner,
 .structureIdentification,
-.primaryInformation {
+.owner, .residence, .contact,
+.structureHead {
     cursor: pointer;
+    display: block;
+    align-items: center;
+    padding: 0.5%;
+    border-radius: 5px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.structureHead,
+.currentLocation{
+    font-size: 20px;
     background-color: #f0ecec;
-    border: 1px solid #f0f0f0;
-    padding: 5px;
+    border: 1px solid #cccccc;
+    padding: 0.5%;
     border-radius: 5px;
-    color: #3e3636;
+    color: #1a1616;
     display: block;
     align-items: center;
 }
-
-h5 {
+.structureIdentification,
+.originalLocation{
+    font-size: 16px;
     background-color: #f7f5f5;
+    border: 1px solid #d4d2d2;
+    color: #3e3636;
 }
 
-.structureIdentification {}
+.owner{
+    font-size: 20px;
+    background-color: #f0ecec;
+    border: 1px solid #cccccc;
+    color: #1a1616;
+}
+
+.residence,
+.contact{
+    font-size: 14px;
+    background-color: #f7f7f7;
+    color: #1a1616;
+}
+
+.ownerHistory{
+    font-size: 20px;
+}
