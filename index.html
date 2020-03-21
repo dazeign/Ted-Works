@@ -14,7 +14,7 @@
 
 <body>
     <p class="structureHead">Structure <i class="fas fa-caret-down"></i></h1>
-        <div class='structureHeadDiv'>
+        <div class='structureHeadDiv hidden'>
             <p>
                 Foundation Type:
                 <select>
@@ -95,7 +95,7 @@
 
         <div>
             <p class="structureIdentification">Structure Identification <i class="fas fa-caret-down"></i></p>
-            <div class="structureIdentificationDiv">
+            <div class="structureIdentificationDiv hidden">
                 <form action="upload.php" method="post" enctype="multipart/form-data">
                     Cover Image:
                     <input type="file" name="fileToUpload" id="fileToUpload" />
@@ -112,7 +112,7 @@
            </div>
            
            <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
-    <div class="currentLocationDiv">
+    <div class="currentLocationDiv hidden">
         <p>Coordinates: <input type="text" /></p>
         <p>Street Address: <input type="text" /></p>
         <p>City: <input type="text" /></p>
@@ -125,7 +125,7 @@
     <p class="originalLocation">
         If from another country (Original Location) <i class="fas fa-caret-down"></i>
     </p>
-    <div class="originalLocationDiv">
+    <div class="originalLocationDiv hidden">
         <p>Coordinates: <input type="text" /></p>
         <p>Street Address: <input type="text" /></p>
         <p>City: <input type="text" /></p>
@@ -135,7 +135,7 @@
     </div>
 
     <p class="owner">Owner <i class="fas fa-caret-down"></i></p>
-    <div class="ownerDiv">
+    <div class="ownerDiv hidden">
         <label>Last Name: <input type="text"/></label>
 
         <label>First Name: <input type="text"/></label>
@@ -159,9 +159,11 @@
         <p class="ownerHistory">Owner History: <input type="text" /></p>
 
         <p class="ownerHistory">Significant History: <input type="text" /></p>
-
-        <input type="submit" value="SUBMIT" />
-        <input type="reset" value="RESET" />
+        <div class="submitAndResetDiv">
+            <input type="submit" id ="submitInput" value="SUBMIT" />
+            <input type="reset" id="resetInput" value="RESET" />
+        </div>
+        
     </div>
 </form>
     </div>

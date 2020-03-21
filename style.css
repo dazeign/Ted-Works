@@ -1,60 +1,98 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap");
 * {
-    font-family: "Baloo Chettan 2", cursive;
+  font-family: "Baloo Chettan 2", cursive;
 }
 body {
-    margin: 0 15% 0 15%;
-    font-size: 14px;
+  margin: 0 15% 0 15%;
+  font-size: 14px;
 }
 .hidden {
-    display: none;
+  display: none;
+}
+
+input {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(92, 90, 90);
+  outline: none;
+}
+
+select {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid rgb(92, 90, 90);
+  outline: none;
+}
+
+.structureIdentificationDiv form #fileToUpload {
+  border: none;
+}
+
+#submitInput {
+  border: none;
+  font-weight: 800;
+}
+
+#resetInput {
+  border: none;
+  font-weight: 800;
+}
+
+.submitAndResetDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .currentLocation,
 .originalLocation,
 .structureIdentification,
-.owner, .residence, .contact,
+.owner,
+.residence,
+.contact,
 .structureHead {
-    cursor: pointer;
-    display: block;
-    align-items: center;
-    padding: 0.5%;
-    border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  align-items: center;
+  padding: 0.5%;
+  border-radius: 5px;
 }
 
 .structureHead,
-.currentLocation{
-    font-size: 20px;
-    background-color: #f0ecec;
-    border: 1px solid #cccccc;
-    padding: 0.5%;
-    border-radius: 5px;
-    color: #1a1616;
-    display: block;
-    align-items: center;
+.currentLocation {
+  font-size: 20px;
+  background-color: #f0ecec;
+  border: 1px solid #cccccc;
+  padding: 0.5%;
+  border-radius: 5px;
+  color: #1a1616;
+  display: block;
+  align-items: center;
 }
 .structureIdentification,
-.originalLocation{
-    font-size: 16px;
-    background-color: #f7f5f5;
-    border: 1px solid #d4d2d2;
-    color: #3e3636;
+.originalLocation {
+  font-size: 16px;
+  background-color: #f7f5f5;
+  border: 1px solid #d4d2d2;
+  color: #3e3636;
 }
 
-.owner{
-    font-size: 20px;
-    background-color: #f0ecec;
-    border: 1px solid #cccccc;
-    color: #1a1616;
+.owner {
+  font-size: 20px;
+  background-color: #f0ecec;
+  border: 1px solid #cccccc;
+  color: #1a1616;
 }
 
 .residence,
-.contact{
-    font-size: 14px;
-    background-color: #f7f7f7;
-    color: #1a1616;
+.contact {
+  font-size: 14px;
+  background-color: #f7f7f7;
+  color: #1a1616;
 }
 
-.ownerHistory{
-    font-size: 20px;
+.ownerHistory {
+  font-size: 20px;
 }
