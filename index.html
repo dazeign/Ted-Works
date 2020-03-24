@@ -14,7 +14,7 @@
 
 <body>
     <p class="structureIdentification">Structure <i class="fas fa-caret-down"></i></p>
-        <div class='structureIdentificationDiv'>
+        <div class='structureIdentificationDiv hidden'>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <p>Cover Image (ID): 
                 <input type="file" name="fileToUpload" id="fileToUpload" /></p>
@@ -91,6 +91,7 @@
                     <option name="option">Option 6</option>
                     </select>
                 </p>
+              <p>Report:  <textarea name="report" id="" cols="30" rows="10"></textarea></p>
         </div>
           <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
                 <div class="currentLocationDiv hidden">
@@ -118,8 +119,8 @@
                         <option value="False">False</option>
 
                     </select></p>
-                </div>        
 
+                </div>        
     </form>
 </body>
 <script>
