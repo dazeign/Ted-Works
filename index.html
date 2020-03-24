@@ -101,10 +101,11 @@
                     <p>Country: <input type="text" name="current_country"/></p>
                     <p>State: <input type="text" name="current_state"/></p>
                     <p>Private: <select name="current_private">
+                        <option></option>
                         <option value="true">True</option>
                         <option value="False">False</option>
-
-                    </select></p>
+                    </select>
+                </p>
                 </div>
            <p class="originalLocation">Original Location <i class="fas fa-caret-down"></i></p>
                 <div class="originalLocationDiv hidden">
@@ -117,19 +118,30 @@
                         <option></option>
                         <option value="true">True</option>
                         <option value="False">False</option>
-
-                    </select></p>
-
-<<<<<<< HEAD
-                </div>        
-=======
-                </div>    
->>>>>>> e855ce711ba06114ada5668df547085b06f7dafe
+                    </select>
+                </p>
+                </div>
+                <p class="member">Member <i class="fas fa-caret-down"></i></p>
+        <div class='memberDiv hidden'>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <p>ID: 
+                <input type="number" name="ID" /></p>
+                <p>Last Name: <input type="text" name="last_name"/></p>
+                <p>First Name: <input type="text" name="first_name" /></p>
+                <p>Organization Name: <input type="text" name="organization_name" /></p>
+                <p>City: <input type="text" name="city"/></p>
+                <p>State: <input type="text" name="state"/></p>
+                <p>Zip Code: <input type="number" name="zipcode"/></p>
+                <p>Phone Number: <input type="number" name="phone_number"/></p>
+                <p>Cell Number: <input type="number" name="cell_number"/></p>
+                <p>Texting: <input type="text" name="texting"/></p>
+                <p>Email: <input type="email" name="email"/></p>
+                <p>Affiliation: <input type="text" name="affiliation"/></p>
+                <p>Permission Level: <input type="number" name="permission_level"/></p>
+                <p>Role: <input type="text" name="role"/></p>
     </form>
 </body>
 <script>
-   
-
     function toggleFunction(clickElementClass, toggleElementClass) {
         const clickElement = document.querySelector(`.${clickElementClass}`);
         const toggleElement = document.querySelector(`.${toggleElementClass}`);
@@ -142,7 +154,8 @@
     toggleFunction("currentLocation", "currentLocationDiv");
     toggleFunction("originalLocation", "originalLocationDiv");
     toggleFunction("structureIdentification", "structureIdentificationDiv");
-    
+    toggleFunction("member", "memberDiv");
+
 </script>
 
 </html>

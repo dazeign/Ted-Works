@@ -16,9 +16,8 @@ textarea {
 .currentLocation,
 .originalLocation,
 .structureIdentification,
-.owner,
-.residence,
-.contact {
+.member
+{
   cursor: pointer;
   display: block;
   align-items: center;
@@ -27,7 +26,7 @@ textarea {
 }
 
 .structureIdentification,
-.currentLocation {
+.currentLocation, .member {
   font-size: 20px;
   background-color: #f0ecec;
   border: 1px solid #cccccc;
@@ -44,21 +43,4 @@ textarea {
   color: #3e3636;
 }
 
-.owner {
-  font-size: 20px;
-  background-color: #f0ecec;
-  border: 1px solid #cccccc;
-  color: #1a1616;
-}
 
-.residence,
-.contact {
-  font-size: 14px;
-  background-color: #f7f7f7;
-  color: #3e3636;
-}
-
-.ownerHistory {
-  font-size: 20px;
-  color: #1a1616;
-}
