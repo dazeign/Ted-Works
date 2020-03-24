@@ -15,174 +15,105 @@
 <body>
     <p class="structureHead">Structure <i class="fas fa-caret-down"></i></h1>
         <div class='structureHeadDiv hidden'>
-            <p>
-                Foundation Type:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-        </select>
-            </p>
-            <p>
-                Construction Style:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-        </select>
-            </p>
-            <p>
-                Joinery Style:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-        </select>
-            </p>
-            <p>
-                Primary Wood Species:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-          <option>Option 9</option>
-          <option>Option 10</option>
-        </select>
-            </p>
-            <p>
-                Condition:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-            </p>
-
-            <!-- <p>
-                Location (Private):
-                <select>
-          <option></option>
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-            </p> -->
-        </div>
-
-        <div>
-            <p class="structureIdentification">Structure Identification <i class="fas fa-caret-down"></i></p>
-            <div class="structureIdentificationDiv hidden">
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-                    Cover Image:
-                    <input type="file" name="fileToUpload" id="fileToUpload" />
-                </form>
-                <form>
-                    <p>
-                        ID:
-                        <input type="number" />
-                    </p>
-                    <p>
-                        Structure Name:
-                        <input type="text" />
-                    </p>
-           </div>
-           
+                <p>
+                    Foundation Type:
+                    <select>
+            <option></option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+            </select>
+                </p>
+                <p>
+                    Construction Style:
+                    <select>
+            <option></option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+            <option>Option 7</option>
+            <option>Option 8</option>
+            </select>
+                </p>
+                <p>
+                    Joinery Style:
+                    <select>
+            <option></option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+            <option>Option 7</option>
+            <option>Option 8</option>
+            </select>
+                </p>
+                <p>
+                    Primary Wood Species:
+                    <select>
+            <option></option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+            <option>Option 7</option>
+            <option>Option 8</option>
+            <option>Option 9</option>
+            <option>Option 10</option>
+            </select>
+                </p>
+                <p>
+                    Condition:
+                    <select>
+            <option></option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+            <option>Option 6</option>
+            </select>
+            </div>            
            <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
-    <div class="currentLocationDiv hidden">
-        <p>Coordinates: <input type="text" /></p>
-        <p>Street Address: <input type="text" /></p>
-        <p>City: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Country: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Zip Code: <input type="text" /></p>
-    </div>
-    
-    <p class="originalLocation">
-        If from another country (Original Location) <i class="fas fa-caret-down"></i>
-    </p>
-    <div class="originalLocationDiv hidden">
-        <p>Coordinates: <input type="text" /></p>
-        <p>Street Address: <input type="text" /></p>
-        <p>City: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Country: <input type="text" /></p>
-        <p>Zip Code: <input type="text" /></p>
-    </div>
+                <div class="currentLocationDiv hidden">
+                    <p>Location Name: <input type="text" name="current_location_name"/></p>
+                    <p>Legal Description <input type="text"name="current_legal_description" /></p>
+                    <p>Township: <input type="text" name="current_township"/></p>
+                    <p>Country: <input type="text" name="current_country"/></p>
+                    <p>State: <input type="text" name="current_state"/></p>
+                    <p>Private: <select name="current_private">
+                        <option value="true">True</option>
+                        <option value="False">False</option>
 
-    <p class="owner">Owner <i class="fas fa-caret-down"></i></p>
-    <div class="ownerDiv hidden">
-        <label>Last Name: <input type="text"/></label>
+                    </select></p>
+                </div>
+           <p class="originalLocation">Original Location <i class="fas fa-caret-down"></i></p>
+                <div class="originalLocationDiv hidden">
+                    <p>Location Name: <input type="text" name="original_location_name"/></p>
+                    <p>Legal Description <input type="text"name="original_legal_description" /></p>
+                    <p>Township: <input type="text" name="original_township"/></p>
+                    <p>Country: <input type="text" name="original_country"/></p>
+                    <p>State: <input type="text" name="original_state"/></p>
+                    <p>Private: <select name="original_private">
+                        <option value="true">True</option>
+                        <option value="False">False</option>
 
-        <label>First Name: <input type="text"/></label>
-
-        <p class="residence">Residence:</p>
-        <label>Street Address: <input type="text"/></label>
-
-        <label>City: <input type="text"/></label>
-
-        <label>State: <input type="text"/></label>
-
-        <label>Zip Code: <input type="text"/></label>
-
-        <p class="contact">Contact:</p>
-        <label>Phone Number: <input type="text"/></label>
-
-        <label>Texting: <input type="text"/></label>
-
-        <label>Email: <input type="email"/></label>
-
-        <p class="ownerHistory">Owner History: <input type="text" /></p>
-
-        <p class="ownerHistory">Significant History: <input type="text" /></p>
-        <div class="submitAndResetDiv">
-            <input type="submit" id ="submitInput" value="SUBMIT" />
-            <input type="reset" id="resetInput" value="RESET" />
-        </div>
+                    </select></p>
+                </div>
         
-    </div>
 </form>
-    </div>
     
-
-    <div>
-        <p>Structure Identification<i class="fas fa-caret-down"></i></p>
-    </div>
-
-    <div>
-
-    </div>
 </body>
 <script>
-    // const currentLocationToggle = document.querySelector(".currentLocation");
-    // const currentLocationDiv = document.querySelector(".currentLocationDiv");
-    // currentLocationToggle.addEventListener("click", () => {
-    //     currentLocationDiv.classList.toggle("hidden");
-    // });
+   
 
     function toggleFunction(clickElementClass, toggleElementClass) {
         const clickElement = document.querySelector(`.${clickElementClass}`);
@@ -196,9 +127,9 @@
 
     toggleFunction("currentLocation", "currentLocationDiv");
     toggleFunction("originalLocation", "originalLocationDiv");
-    toggleFunction("owner", "ownerDiv");
-    toggleFunction("structureHead", "structureHeadDiv");
     toggleFunction("structureIdentification", "structureIdentificationDiv");
+    toggleFunction("structureHead", "structureHeadDiv");
+    
 </script>
 
 </html>
