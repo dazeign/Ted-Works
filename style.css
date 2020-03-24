@@ -1,59 +1,64 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap");
 * {
-    font-family: "Baloo Chettan 2", cursive;
+  font-family: "Baloo Chettan 2", cursive;
 }
 body {
-    margin: 0 15% 0 15%;
-    font-size: 14px;
+  margin: 0 15% 0 15%;
+  font-size: 14px;
 }
 .hidden {
-    display: none;
+  display: none;
+}
+textarea {
+  display: block;
 }
 
 .currentLocation,
 .originalLocation,
 .structureIdentification,
-.owner, .residence, .contact{
-    cursor: pointer;
-    display: block;
-    align-items: center;
-    padding: 0.5%;
-    border-radius: 5px;
+.owner,
+.residence,
+.contact {
+  cursor: pointer;
+  display: block;
+  align-items: center;
+  padding: 0.5%;
+  border-radius: 5px;
 }
 
 .structureIdentification,
-.currentLocation{
-    font-size: 20px;
-    background-color: #f0ecec;
-    border: 1px solid #cccccc;
-    padding: 0.5%;
-    border-radius: 5px;
-    color: #1a1616;
-    display: block;
-    align-items: center;
+.currentLocation {
+  font-size: 20px;
+  background-color: #f0ecec;
+  border: 1px solid #cccccc;
+  padding: 0.5%;
+  border-radius: 5px;
+  color: #1a1616;
+  display: block;
+  align-items: center;
 }
-.originalLocation{
-    font-size: 16px;
-    background-color: #f7f5f5;
-    border: 1px solid #d4d2d2;
-    color: #3e3636;
+.originalLocation {
+  font-size: 16px;
+  background-color: #f7f5f5;
+  border: 1px solid #d4d2d2;
+  color: #3e3636;
 }
 
-.owner{
-    font-size: 20px;
-    background-color: #f0ecec;
-    border: 1px solid #cccccc;
-    color: #1a1616;
+.owner {
+  font-size: 20px;
+  background-color: #f0ecec;
+  border: 1px solid #cccccc;
+  color: #1a1616;
 }
 
 .residence,
-.contact{
-    font-size: 14px;
-    background-color: #f7f7f7;
-    color: #3e3636;
+.contact {
+  font-size: 14px;
+  background-color: #f7f7f7;
+  color: #3e3636;
 }
 
-.ownerHistory{
-    font-size: 20px;
-    color: #1a1616;
+.ownerHistory {
+  font-size: 20px;
+  color: #1a1616;
 }
