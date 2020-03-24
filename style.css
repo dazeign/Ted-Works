@@ -13,8 +13,7 @@ body {
 .currentLocation,
 .originalLocation,
 .structureIdentification,
-.owner, .residence, .contact,
-.structureHead {
+.owner, .residence, .contact{
     cursor: pointer;
     display: block;
     align-items: center;
@@ -22,7 +21,7 @@ body {
     border-radius: 5px;
 }
 
-.structureHead,
+.structureIdentification,
 .currentLocation{
     font-size: 20px;
     background-color: #f0ecec;
@@ -33,7 +32,6 @@ body {
     display: block;
     align-items: center;
 }
-.structureIdentification,
 .originalLocation{
     font-size: 16px;
     background-color: #f7f5f5;
@@ -52,9 +50,10 @@ body {
 .contact{
     font-size: 14px;
     background-color: #f7f7f7;
-    color: #1a1616;
+    color: #3e3636;
 }
 
 .ownerHistory{
     font-size: 20px;
+    color: #1a1616;
 }

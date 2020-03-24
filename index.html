@@ -13,167 +13,86 @@
 </head>
 
 <body>
-    <p class="structureHead">Structure <i class="fas fa-caret-down"></i></h1>
-        <div class='structureHeadDiv'>
-            <p>
-                Foundation Type:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-        </select>
-            </p>
-            <p>
-                Construction Style:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-        </select>
-            </p>
-            <p>
-                Joinery Style:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-        </select>
-            </p>
-            <p>
-                Primary Wood Species:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-          <option>Option 7</option>
-          <option>Option 8</option>
-          <option>Option 9</option>
-          <option>Option 10</option>
-        </select>
-            </p>
-            <p>
-                Condition:
-                <select>
-          <option></option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-          <option>Option 6</option>
-        </select>
-            </p>
-
-            <!-- <p>
-                Location (Private):
-                <select>
-          <option></option>
-          <option>Yes</option>
-          <option>No</option>
-        </select>
-            </p> -->
+    <p class="structureIdentification">Structure <i class="fas fa-caret-down"></i></p>
+        <div class='structureIdentificationDiv'>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <p>Cover Image (ID): 
+                <input type="file" name="fileToUpload" id="fileToUpload" /></p>
+                <p>Structure Name: <input type="text" name="structure_name"/></p>
+                <p>Built From: <input type="number" name="built_from" /></p>
+                <p>Built To: <input type="number" name="built_to" /></p>
+                <p>Builder: <input type="text" name="builder"/></p>
+                <p>Original Use: <input type="text" name="original_use"/></p>
+                <p>Present Use: <input type="text" name="present_use"/></p>
+                <p>Floor Area: <input type="number" name="floor_area"/></p>
+                <p>Levels: <input type="text" name="levels"/></p>
+                <p>Windows: <input type="text" name="windows"/></p>
+                <p>Doors: <input type="number" name="doors"/></p>
+                <p>Option: <input type="number" name="option"/></p>
+                <p>Foundation Type: 
+                    <select>
+                    <option name=""></option>
+                    <option name="option">Option 1</option>
+                    <option name="option">Option 2</option>
+                    <option name="option">Option 3</option>
+                    <option name="option">Option 4</option>
+                    <option name="option">Option 5</option>
+                    </select>
+                </p>
+                <p>Construction Style: 
+                    <select>
+                    <option name="option"></option>
+                    <option name="option">Option 1</option>
+                    <option name="option">Option 2</option>
+                    <option name="option">Option 3</option>
+                    <option name="option">Option 4</option>
+                    <option name="option">Option 5</option>
+                    <option name="option">Option 6</option>
+                    <option name="option">Option 7</option>
+                    <option name="option">Option 8</option>
+                    </select>
+                </p>
+                <p>Joinery Style: 
+                    <select>
+                    <option name="option"></option>
+                    <option name="option">Option 1</option>
+                    <option name="option">Option 2</option>
+                    <option name="option">Option 3</option>
+                    <option name="option">Option 4</option>
+                    <option name="option">Option 5</option>
+                    <option name="option">Option 6</option>
+                    <option name="option">Option 7</option>
+                    <option name="option">Option 8</option>
+                    </select>
+                </p>
+                <p>Primary Wood Species:
+                    <select>
+                    <option name="option"></option>
+                    <option name="option">Option 1</option>
+                    <option name="option">Option 2</option>
+                    <option name="option">Option 3</option>
+                    <option name="option">Option 4</option>
+                    <option name="option">Option 5</option>
+                    <option name="option">Option 6</option>
+                    <option name="option">Option 7</option>
+                    <option name="option">Option 8</option>
+                    <option name="option">Option 9</option>
+                    <option name="option">Option 10</option>
+                    </select>
+                </p>
+                <p>Condition:
+                    <select>
+                    <option name="option"></option>
+                    <option name="option">Option 1</option>
+                    <option name="option">Option 2</option>
+                    <option name="option">Option 3</option>
+                    <option name="option">Option 4</option>
+                    <option name="option">Option 5</option>
+                    <option name="option">Option 6</option>
+                    </select>
+                </p>
         </div>
-
-        <div>
-            <p class="structureIdentification">Structure Identification <i class="fas fa-caret-down"></i></p>
-            <div class="structureIdentificationDiv">
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-                    Cover Image:
-                    <input type="file" name="fileToUpload" id="fileToUpload" />
-                </form>
-                <form>
-                    <p>
-                        ID:
-                        <input type="number" />
-                    </p>
-                    <p>
-                        Structure Name:
-                        <input type="text" />
-                    </p>
-           </div>
-           
-           <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
-    <div class="currentLocationDiv">
-        <p>Coordinates: <input type="text" /></p>
-        <p>Street Address: <input type="text" /></p>
-        <p>City: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Country: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Zip Code: <input type="text" /></p>
-    </div>
-    
-    <p class="originalLocation">
-        If from another country (Original Location) <i class="fas fa-caret-down"></i>
-    </p>
-    <div class="originalLocationDiv">
-        <p>Coordinates: <input type="text" /></p>
-        <p>Street Address: <input type="text" /></p>
-        <p>City: <input type="text" /></p>
-        <p>State: <input type="text" /></p>
-        <p>Country: <input type="text" /></p>
-        <p>Zip Code: <input type="text" /></p>
-    </div>
-
-    <p class="owner">Owner <i class="fas fa-caret-down"></i></p>
-    <div class="ownerDiv">
-        <label>Last Name: <input type="text"/></label>
-
-        <label>First Name: <input type="text"/></label>
-
-        <p class="residence">Residence:</p>
-        <label>Street Address: <input type="text"/></label>
-
-        <label>City: <input type="text"/></label>
-
-        <label>State: <input type="text"/></label>
-
-        <label>Zip Code: <input type="text"/></label>
-
-        <p class="contact">Contact:</p>
-        <label>Phone Number: <input type="text"/></label>
-
-        <label>Texting: <input type="text"/></label>
-
-        <label>Email: <input type="email"/></label>
-
-        <p class="ownerHistory">Owner History: <input type="text" /></p>
-
-        <p class="ownerHistory">Significant History: <input type="text" /></p>
-
-        <input type="submit" value="SUBMIT" />
-        <input type="reset" value="RESET" />
-    </div>
-</form>
-    </div>
-    
-
-    <div>
-        <p>Structure Identification<i class="fas fa-caret-down"></i></p>
-    </div>
-
-    <div>
-
-    </div>
+    </form>
 </body>
 <script>
     // const currentLocationToggle = document.querySelector(".currentLocation");
