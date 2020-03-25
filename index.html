@@ -91,9 +91,10 @@
                     <option name="option">Option 6</option>
                     </select>
                 </p>
-              <p>Report:  <textarea name="report" id="" cols="30" rows="10"></textarea></p>
+              <p>Report:  <input type="file"></input></p>
+              <p>Structure images<input type="file"></p>
         </div>
-          <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
+          <p class="currentLocation">Location <i class="fas fa-caret-down"></i></p>
                 <div class="currentLocationDiv hidden">
                     <p>Location Name: <input type="text" name="current_location_name"/></p>
                     <p>Legal Description <input type="text"name="current_legal_description" /></p>
@@ -101,20 +102,6 @@
                     <p>Country: <input type="text" name="current_country"/></p>
                     <p>State: <input type="text" name="current_state"/></p>
                     <p>Private: <select name="current_private">
-                        <option></option>
-                        <option value="true">True</option>
-                        <option value="False">False</option>
-                    </select>
-                </p>
-                </div>
-           <p class="originalLocation">Original Location <i class="fas fa-caret-down"></i></p>
-                <div class="originalLocationDiv hidden">
-                    <p>Location Name: <input type="text" name="original_location_name"/></p>
-                    <p>Legal Description <input type="text"name="original_legal_description" /></p>
-                    <p>Township: <input type="text" name="original_township"/></p>
-                    <p>Country: <input type="text" name="original_country"/></p>
-                    <p>State: <input type="text" name="original_state"/></p>
-                    <p>Private: <select name="original_private">
                         <option></option>
                         <option value="true">True</option>
                         <option value="False">False</option>
@@ -152,7 +139,6 @@
     }
 
     toggleFunction("currentLocation", "currentLocationDiv");
-    toggleFunction("originalLocation", "originalLocationDiv");
     toggleFunction("structureIdentification", "structureIdentificationDiv");
     toggleFunction("member", "memberDiv");
 
