@@ -18,7 +18,7 @@
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <p>Cover Image (ID): 
                 <input type="file" name="fileToUpload" id="fileToUpload" /></p>
-                <p>Structure Name: <input type="text" name="structure_name"/></p>
+                <p>Structure Name: <input type="text" name="structure_name" required="required" maxlength=""/></p>
                 <p>Built From: <input type="number" name="built_from" /></p>
                 <p>Built To: <input type="number" name="built_to" /></p>
                 <p>Builder: <input type="text" name="builder"/></p>
@@ -93,7 +93,7 @@
                 </p>
               <p>Report:  <textarea name="report" id="" cols="30" rows="10"></textarea></p>
         </div>
-          <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
+          <!-- <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
                 <div class="currentLocationDiv hidden">
                     <p>Location Name: <input type="text" name="current_location_name"/></p>
                     <p>Legal Description <input type="text"name="current_legal_description" /></p>
@@ -106,7 +106,7 @@
                         <option value="False">False</option>
                     </select>
                 </p>
-                </div>
+                </div> -->
            <p class="originalLocation">Original Location <i class="fas fa-caret-down"></i></p>
                 <div class="originalLocationDiv hidden">
                     <p>Location Name: <input type="text" name="original_location_name"/></p>
@@ -121,7 +121,7 @@
                     </select>
                 </p>
                 </div>
-                <p class="member">Member <i class="fas fa-caret-down"></i></p>
+                <!-- <p class="member">Member <i class="fas fa-caret-down"></i></p>
         <div class='memberDiv hidden'>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <p>ID: 
@@ -131,14 +131,14 @@
                 <p>Organization Name: <input type="text" name="organization_name" /></p>
                 <p>City: <input type="text" name="city"/></p>
                 <p>State: <input type="text" name="state"/></p>
-                <p>Zip Code: <input type="number" name="zipcode"/></p>
+                <p>Zip Code: <input type="number" name="zipcode" pattern="[A-Za-z]{3}"/></p>
                 <p>Phone Number: <input type="number" name="phone_number"/></p>
                 <p>Cell Number: <input type="number" name="cell_number"/></p>
                 <p>Texting: <input type="text" name="texting"/></p>
                 <p>Email: <input type="email" name="email"/></p>
                 <p>Affiliation: <input type="text" name="affiliation"/></p>
                 <p>Permission Level: <input type="number" name="permission_level"/></p>
-                <p>Role: <input type="text" name="role"/></p>
+                <p>Role: <input type="text" name="role"/></p> -->
     </form>
 </body>
 <script>
