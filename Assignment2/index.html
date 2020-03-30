@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
     <script src="dragAndDrop.js"></script>
     <title>Drag and Drop Assignment</title>
 </head>
 <body>
-    <div id="shoppingcart">
+
+    <!-- <div id="shoppingcart">
         <header class="blockheader"><span>Shopping Cart</span></header>
         <ul></ul>
     </div>
@@ -26,6 +28,22 @@
     </article>
     <script>
         document.addEventListener("DOMContentLoaded", addDndHandlers, false);
-    </script>
+    </script> -->
+
+    <!-- This is the corrected file -->
+    
+    <div id="drop-area">
+        <form class="my-form">
+          <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="button" for="fileElem">Select some files</label>
+        </form>
+    </div>
+
+    <div id="gallery"></div>
+
+    <progress id="progress-bar" max=100 value=0></progress>
+
+    
 </body>
 </html>
