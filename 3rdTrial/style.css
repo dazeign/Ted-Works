@@ -6,21 +6,19 @@ body {
     margin: 0 36% 0 36%;
     font-size: 14px;
   }
-#dropArea {
+#dropArea,
+#dropArea2 {
     border: 2px dashed #ccc;
-    border-radius: 20px;
+    border-radius: 10px;
     width: 500px;
     height: 300px;
     font-family: sans-serif;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     align-self: center;
   }
   p{
     margin-left: 18%;
-  }
-  img{
-    padding-left: 20px;
   }
   img:hover{
       cursor: pointer;  
