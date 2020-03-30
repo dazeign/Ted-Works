@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Drag & Drop</title>
   </head>
   <style>
     img {
       position: absolute;
       left: 0;
-      top: 0;
+      top: 50px;
       width: 200px;
       background: rgba(255, 255, 255, 0.66);
       border: 2px solid rgba(0, 0, 0, 0.5);
       border-radius: 4px;
       padding: 8px;
+    }
+    img:hover{
+      cursor: pointer;
     }
     .container {
       width: 100vw;
@@ -22,6 +25,7 @@
     }
   </style>
   <body>
+    <p>Sir, You can drag this image and drop wherever you want on this webpage :)</p>
     <div class="container">
       <img src="../farm.png" alt="An Image" id="dragme" draggable="true" />
     </div>
@@ -55,3 +59,4 @@
     document.body.addEventListener("drop", drop, false);
   </script>
 </html>
+

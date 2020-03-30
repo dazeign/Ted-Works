@@ -19,3 +19,9 @@ body {
   p{
     margin-left: 18%;
   }
+  img{
+    padding-left: 20px;
+  }
+  img:hover{
+      cursor: pointer;  
+  }
