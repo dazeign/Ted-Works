@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+<p>
+    You can please the map image inside this rounded box
+</p>
+
+<div id="dropArea" 
+ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="https://res.cloudinary.com/dlq9o1289/image/upload/v1566393174/sample.jpg" 
+draggable="true" ondragstart="drag(event)"
+width="500" height="300">
+
+
+
+<script src="script.js"></script> 
+</body>
+</html>

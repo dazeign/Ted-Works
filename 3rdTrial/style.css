@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap");
+* {
+  font-family: "Baloo Chettan 2", cursive;
+}
+body {
+    margin: 0 36% 0 36%;
+    font-size: 14px;
+  }
+#dropArea {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    font-family: sans-serif;
+    padding: 20px;
+    display: flex;
+    align-self: center;
+  }
+  p{
+    margin-left: 18%;
+  }
