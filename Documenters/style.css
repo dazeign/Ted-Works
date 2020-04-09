@@ -14,7 +14,6 @@ textarea {
 }
 
 .currentLocation,
-.originalLocation,
 .structureIdentification,
 .member
 {
@@ -35,12 +34,6 @@ textarea {
   color: #1a1616;
   display: block;
   align-items: center;
-}
-.originalLocation {
-  font-size: 16px;
-  background-color: #f7f5f5;
-  border: 1px solid #d4d2d2;
-  color: #3e3636;
 }
 
 
