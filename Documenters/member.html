@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://kit.fontawesome.com/b4d27aaf57.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Documenter User-Interface | Member</title>
     <link rel="stylesheet" href="/style.css">
@@ -11,9 +11,9 @@
 <body>
     <h2>Click each table to drop down</h2>
     <p class="member">Members <i class="fas fa-caret-down"></i></p>
-        <div class='memberDiv'>
+        <div class="memberDiv hidden">
             <form action="upload.php" method="post">
-                <p>Cover Image (ID): 
+                <p>Cover Image (ID):
                 <input type="file" name="fileToUpload" id="fileToUpload" /></p>
                 <p>Last Name: <input type="text" name="last_name" required="required" maxlength=""/></p>
                 <p>First Name: <input type="number" name="first_name" /></p>
@@ -28,7 +28,9 @@
                 <p>Email: <input type="email" name="email"/></p>
                 <p>Affiliation: <input type="text" name="affiliation"/></p>
                 <p>Permission Level: <input type="number" name="permission_level"/></p>
-                <p>Role: <input type="name" name="role"/></p>         
+                <p>Role: <input type="name" name="role"/></p>  
+            </form>
+        </div>
     <script src="/script.js"></script>
 </body>
 </html>
