@@ -12,7 +12,6 @@ body {
 textarea {
   display: block;
 }
-
 .currentLocation,
 .structureIdentification,
 .member
@@ -23,7 +22,6 @@ textarea {
   padding: 0.5%;
   border-radius: 5px;
 }
-
 .structureIdentification,
 .currentLocation, .member {
   font-size: 20px;
