@@ -10,99 +10,102 @@
 </head>
 
 <body>
-    <h2>Click each table to drop down</h2>
+    <p>Members Details <a href="/member.html">here</a></p>
     <p class="structureIdentification">Structure <i class="fas fa-caret-down"></i></p>
         <div class='structureIdentificationDiv hidden'>
             <form action="upload.php" method="post" enctype="multipart/form-data">
-                <p>Cover Image (ID): 
+                <p>Structure (ID): 
                 <input type="file" name="fileToUpload" id="fileToUpload" /></p>
-                <p>Structure Name: <input type="text" name="structure_name" required="required" maxlength=""/></p>
+                <p>Structure Name: <input type="text" name="structure_name" required="required" /></p>
                 <p>Built From: <input type="number" name="built_from" /></p>
                 <p>Built To: <input type="number" name="built_to" /></p>
-                <p>Builder: <input type="text" name="builder"/></p>
-                <p>Original Use: <input type="text" name="original_use"/></p>
-                <p>Present Use: <input type="text" name="present_use"/></p>
+                <p>Builder: <input type="text" name="builder" maxlength="225" /></p>
+                <p>Original Use: <input type="text" name="original_use" maxlength="225"/></p>
+                <p>Present Use: <input type="text" name="present_use" maxlength="225"/></p>
                 <p>Floor Area: <input type="number" name="floor_area"/></p>
-                <p>Levels: <input type="text" name="levels"/></p>
-                <p>W`indows: <input type="text" name="windows"/></p>
+                <p>Levels: <input type="text" name="levels" maxlength="225"/></p>
                 <p>Doors: <input type="number" name="doors"/></p>
-                <p>Option: <input type="number" name="option"/></p>
+                <p>Windows: <input type="number" name="windows" /></p>
+                <p>Rooms: <input type="number" name="room"/></p>
                 <p>Foundation Type: 
-                    <select>
+                    <select name="foundation_type">
                     <option name=""></option>
-                    <option name="option1">Option 1</option>
-                    <option name="option2">Option 2</option>
-                    <option name="option3">Option 3</option>
-                    <option name="option4">Option 4</option>
-                    <option name="option5">Option 5</option>
+                    <option name="option1" maxlength="225">Option 1</option>
+                    <option name="option2" maxlength="225">Option 2</option>
+                    <option name="option3" maxlength="225">Option 3</option>
+                    <option name="option4" maxlength="225">Option 4</option>
+                    <option name="option5" maxlength="225">Option 5</option>
                     </select>
                 </p>
                 <p>Construction Style: 
-                    <select>
-                    <option name="option6"></option>
-                    <option name="option7">Option 1</option>
-                    <option name="option8">Option 2</option>
-                    <option name="option9">Option 3</option>
-                    <option name="option10">Option 4</option>
-                    <option name="option11">Option 5</option>
-                    <option name="option12">Option 6</option>
-                    <option name="option13">Option 7</option>
-                    <option name="option14">Option 8</option>
+                    <select name="construction_style">
+                    <option name="option6" maxlength="225"></option>
+                    <option name="option7" maxlength="225">Option 1</option>
+                    <option name="option8" maxlength="225">Option 2</option>
+                    <option name="option9" maxlength="225">Option 3</option>
+                    <option name="option10" maxlength="225">Option 4</option>
+                    <option name="option11" maxlength="225">Option 5</option>
+                    <option name="option12" maxlength="225">Option 6</option>
+                    <option name="option13" maxlength="225">Option 7</option>
+                    <option name="option14" maxlength="225">Option 8</option>
                     </select>
                 </p>
                 <p>Joinery Style: 
-                    <select>
-                    <option name="option15"></option>
-                    <option name="option16">Option 1</option>
-                    <option name="option17">Option 2</option>
-                    <option name="option18">Option 3</option>
-                    <option name="option19">Option 4</option>
-                    <option name="option20">Option 5</option>
-                    <option name="option21">Option 6</option>
-                    <option name="option22">Option 7</option>
-                    <option name="option23">Option 8</option>
+                    <select name="joinery_style">
+                    <option name="option15" maxlength="225"></option>
+                    <option name="option16" maxlength="225">Option 1</option>
+                    <option name="option17" maxlength="225">Option 2</option>
+                    <option name="option18" maxlength="225">Option 3</option>
+                    <option name="option19" maxlength="225">Option 4</option>
+                    <option name="option20" maxlength="225">Option 5</option>
+                    <option name="option21" maxlength="225">Option 6</option>
+                    <option name="option22" maxlength="225">Option 7</option>
+                    <option name="option23" maxlength="225">Option 8</option>
                     </select>
                 </p>
                 <p>Primary Wood Species:
-                    <select>
-                    <option name="option24"></option>
-                    <option name="option25">Option 1</option>
-                    <option name="option26">Option 2</option>
-                    <option name="option27">Option 3</option>
-                    <option name="option28">Option 4</option>
-                    <option name="option29">Option 5</option>
-                    <option name="option30">Option 6</option>
-                    <option name="option31">Option 7</option>
-                    <option name="option32">Option 8</option>
-                    <option name="option33">Option 9</option>
-                    <option name="option34">Option 10</option>
+                    <select name="primary_wood_species">
+                    <option name="option24" maxlength="225"></option>
+                    <option name="option25" maxlength="225">Option 1</option>
+                    <option name="option26" maxlength="225">Option 2</option>
+                    <option name="option27" maxlength="225">Option 3</option>
+                    <option name="option28" maxlength="225">Option 4</option>
+                    <option name="option29" maxlength="225">Option 5</option>
+                    <option name="option30" maxlength="225">Option 6</option>
+                    <option name="option31" maxlength="225">Option 7</option>
+                    <option name="option32" maxlength="225">Option 8</option>
+                    <option name="option33" maxlength="225">Option 9</option>
+                    <option name="option34" maxlength="225">Option 10</option>
                     </select>
                 </p>
                 <p>Condition:
-                    <select>
-                    <option name="option35"></option>
-                    <option name="option36">Option 1</option>
-                    <option name="option37">Option 2</option>
-                    <option name="option38">Option 3</option>
-                    <option name="option39">Option 4</option>
-                    <option name="option40">Option 5</option>
-                    <option name="option41">Option 6</option>
+                    <select name="condition">
+                    <option name="option35" maxlength="225"></option>
+                    <option name="option36" maxlength="225">Option 1</option>
+                    <option name="option37" maxlength="225">Option 2</option>
+                    <option name="option38" maxlength="225">Option 3</option>
+                    <option name="option39" maxlength="225">Option 4</option>
+                    <option name="option40" maxlength="225">Option 5</option>
+                    <option name="option41" maxlength="225">Option 6</option>
                     </select>
                 </p>
                 <p>Coordinate Latitude: <input type="number" name="coordinate_latitude" /></p>
                 <p>Coordinate Longitude: <input type="number" name="coordinate_longitude" /></p>
-            <p>Report: <input type="file" name="report"></p>
+            <!-- <p>Report: <input type="textarea" name="report" maxlength="1500"></p>
             <p>Structure images: (ID)<input type="file" name="url"></p>
             <p>Structure images: (URL)<input type="file" name="url"></p>
+             -->
         </div>
 
-         <p class="currentLocation">Current Location <i class="fas fa-caret-down"></i></p>
+         <p class="currentLocation">Location <i class="fas fa-caret-down"></i></p>
                 <div class="currentLocationDiv hidden">
                     <form>
+                    <p>Structure (ID): 
+                        <input type="file" name="fileToUpload" id="fileToUpload" /></p>
                     <p>Location Name: <input type="text" name="current_location_name"/></p>
                     <p>Legal Description <input type="text"name="current_legal_description" /></p>
                     <p>Township: <input type="text" name="current_township"/></p>
-                    <p>Country: <input type="text" name="current_country"/></p>
+                    <p>County: <input type="text" name="current_country"/></p>
                     <p>State: <input type="text" name="current_state"/></p>
                     <p>Private: <select name="current_private">
                         <option></option>
@@ -111,8 +114,9 @@
                     </select></p>
                     </form>
                 </div> 
-        <p>Members Details <a href="/member.html">here</a></p>
+        
 </body>
+
 <script src="/script.js"></script>
 
 </html>

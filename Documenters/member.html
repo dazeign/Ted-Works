@@ -13,25 +13,25 @@
     <p class="member">Members <i class="fas fa-caret-down"></i></p>
         <div class="memberDiv hidden">
             <form action="upload.php" method="post">
-                <p>Cover Image (ID):
+                <p>Member (ID):
                 <input type="file" name="fileToUpload" id="fileToUpload" /></p>
-                <p>Last Name: <input type="text" name="last_name" required="required" maxlength=""/></p>
-                <p>First Name: <input type="number" name="first_name" /></p>
-                <p>Organization Name: <input type="name" name="organization_name" /></p>
-                <p>Street Address: <input type="text" name="street_address"/></p>
-                <p>City: <input type="text" name="city"/></p>
-                <p>State: <input type="text" name="state"/></p>
-                <p>Zip Code: <input type="number" name="zip_code"/></p>
-                <p>Phone Number: <input type="number" name="phone_number"/></p>
-                <p>Cell Number: <input type="number" name="cell_number"/></p>
-                <p>Texting: <input type="name" name="texting"/></p>
-                <p>Email: <input type="email" name="email"/></p>
-                <p>Affiliation: <input type="text" name="affiliation"/></p>
-                <p>Permission Level: <input type="number" name="permission_level"/></p>
-                <p>Role: <input type="name" name="role"/></p>  
+                <p>Last Name: <input type="text" name="last_name" required="required" /></p>
+                <p>First Name: <input type="number" name="first_name" maxlength="255" /></p>
+                <p>Organization Name: <input type="name" name="organization_name" maxlength="255" /></p>
+                <p>Street Address: <input type="text" name="street_address" maxlength="255" /></p>
+                <p>City: <input type="text" name="city" maxlength="255" /></p>
+                <p>State: <input type="text" name="state" maxlength="255" /></p>
+                <p>Zip Code: <input type="number" name="zip_code" /></p>
+                <p>Phone Number: <input type="number" name="phone_number" maxlength="255" /></p>
+                <p>Cell Number: <input type="number" name="cell_number" maxlength="255" /></p>
+                <p>Texting: <input type="name" name="texting" maxlength="255" /></p>
+                <p>Email: <input type="email" name="email" maxlength="255" /></p>
+                <p>Affiliation: <input type="text" name="affiliation" maxlength="255" /></p>
+                <p>Permission Level: <input type="number" name="permission_level" /></p>
+                <p>Role: <input type="name" name="role" maxlength="255" /></p>  
             </form>
         </div>
-    <script src="/script.js"></script>
+        <script src="/script.js"></script>
 </body>
 </html>
 
