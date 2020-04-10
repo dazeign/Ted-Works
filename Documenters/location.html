@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documenter User-Interface | Location</title>
+</head>
+<body>
+    <p>Back to Structure Details <a href="index.html">here</a></p>
+    <p class="currentLocation">Location <i class="fas fa-caret-down"></i></p>
+        <div class="currentLocationDiv hidden">
+            <form>
+            <p>Structure (ID): 
+                <input type="file" name="fileToUpload" id="fileToUpload" /></p>
+            <p>Location Name: <input type="text" name="current_location_name"/></p>
+            <p>Legal Description <input type="text"name="current_legal_description" /></p>
+            <p>Township: <input type="text" name="current_township"/></p>
+            <p>County: <input type="text" name="current_country"/></p>
+            <p>State: <input type="text" name="current_state"/></p>
+            <p>Private: <select name="current_private">
+            <option></option>
+            <option value="true">True</option>
+            <option value="False">False</option>
+            </select></p>
+            </form>
+        </div>
+</body>
+</html>
